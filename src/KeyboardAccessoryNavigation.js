@@ -129,7 +129,7 @@ class KeyboardAccessoryNavigation extends Component {
 KeyboardAccessoryNavigation.propTypes = {
   ...KeyboardAccessoryView.propTypes,
   doneButtonTitle: PropTypes.string,
-  doneButtonTitleProps: Text.propTypes,
+  doneButtonTitleProps: PropTypes.object,
   infoMessage: PropTypes.string,
   doneButton: PropTypes.element,
   nextButton: PropTypes.element,
@@ -150,7 +150,7 @@ KeyboardAccessoryNavigation.propTypes = {
   doneButtonStyle: (View.propTypes || ViewPropTypes).style,
   doneButtonTitleStyle: Text.propTypes.style,
   infoMessageStyle: Text.propTypes.style,
-  infoMessageProps: Text.propTypes,
+  infoMessageProps: PropTypes.object,
   nextButtonDirection: PropTypes.oneOf(["up", "down", "left", "right"]),
   previousButtonDirection: PropTypes.oneOf(["up", "down", "left", "right"])
 };
